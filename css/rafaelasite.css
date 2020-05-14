@@ -1,11 +1,33 @@
+/* reset do css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-image: url('https://lp.mentalidadeempreendedora.com.br/wp-content/uploads/2017/06/background-azul-1024x493.png'); 
     background-size: auto 100vh;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
 }
+/* se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;    
+    }
+
+}
+header{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
 .menu {
     background-color: aliceblue;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 .menu ul {
     display: flex;
@@ -13,6 +35,10 @@ body {
 }
 .menu li {
     list-style: none;
+}
+.menu a{
+    padding: 10px 20px;
+    display: block;
 }
 a{
     color: teal;
@@ -31,4 +57,8 @@ a:hover {
 }
 .site-subtitle{
     font-style: italic;
+}
+.img-portfolio{
+    height: 180px;
+    width: 180px;
 }
